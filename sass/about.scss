@@ -1,0 +1,151 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #040f20;
+}
+
+.about__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $color1;
+  letter-spacing: $main-spacing;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.about__main-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__main-item-title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: $main-spacing;
+  padding-bottom: 10px;
+  color: $color1;
+}
+
+.about__main-item-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: $white;
+}
+
+.about__numbers {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__nubmers-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__numbers-item {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: $white;
+}
+
+.about__tech {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__tech-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: $white;
+}
+
+.about__sureness {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__sureness-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: $white;
+}
+
+.about__control {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__control-text {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 400;
+  color: $white;
+}
+
+.about__callback {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__call-link {
+  display: block;
+  width: 260px;
+  font-size: 11.86px;
+  line-height: 37.81px;
+  letter-spacing: $main-spacing;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $color1;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: $black;
+}
+
+.about__call-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 30px;
+  font-weight: 300;
+  color: $white;
+}
