@@ -1,0 +1,89 @@
+.btn__container {
+  display: flex;
+}
+
+.btn-decoration {
+  position: relative;
+}
+
+.btn-corner {
+  width: 1px;
+  height: 1px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-color: $color1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-color: $color1;
+  }
+
+  &--left {
+    &::before {
+      border-left: 1px solid $color1;
+      border-top: 1px solid $color1;
+      left: -5px;
+      top: -5px;
+    }
+
+    &::after {
+      border-left: 1px solid $color1;
+      border-bottom: 1px solid $color1;
+      left: -5px;
+      bottom: -5px;
+    }
+  }
+
+  &--right {
+    &::before {
+      border-right: 1px solid $color1;
+      border-top: 1px solid $color1;
+      right: -5px;
+      top: -5px;
+    }
+
+    &::after {
+      border-right: 1px solid $color1;
+      border-bottom: 1px solid $color1;
+      right: -5px;
+      bottom: -5px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .btn-corner {
+    &--left {
+      &::before {
+        left: -10px;
+        top: -10px;
+      }
+
+      &::after {
+        left: -10px;
+        bottom: -10px;
+      }
+    }
+
+    &--right {
+      &::before {
+        right: -10px;
+        top: -10px;
+      }
+
+      &::after {
+        right: -10px;
+        bottom: -10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.slider {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  z-index: 9;
+  background-color: #070e15;
+}
+
+.slider__bg {
+  position: absolute;
+  background-image: url("../img/bg-slider-mobile2.png");
+  background-size: auto 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.slider__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+  z-index: 10;
+}
+
+
+.slider__title {
+  font-family: $font;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: $main-spacing;
+  text-transform: uppercase;
+  text-align: left;
+  color: $color-text;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.slider__subtitle {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: $main-spacing;
+  color: $color1;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.slider__btn {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: $main-spacing;
+  color: $color-text-alt;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $color1;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+
+@media (min-width: $tablet) {
+  .slider__title {
+    font-size: 30px;
+    width: 400px;
+  }
+
+  .slider__btn {
+    margin: 0;
+  }
+
+  .slider__container {
+    z-index: 12;
+  }
+
+  .slider__bg {
+    min-height: 470px;
+    background-image: url("../img/bg-slide1.png");
+    z-index: 11;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider {
+    background-image: linear-gradient(to bottom, #090f16, #12171e, #181e26, #1e262e, #242d37);
+  }
+
+  .slider__container {
+    padding-top: 0;
+  }
+
+  .slider__bg {
+    min-height: 570px;
+    background-image: url("../img/bg-slide1.png");
+    z-index: 11;
+    opacity: 1;
+  }
+
+  .slider__title {
+    font-size: 36px;
+  }
+
+  .slider__subtitle {
+    font-size: 18px;
+  }
+
+  .slider__btn {
+    font-size: 18px;
+    line-height: 51px;
+  }
+}
