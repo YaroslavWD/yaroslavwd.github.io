@@ -4,43 +4,19 @@
   background-image: url("../img/bg-geometry_black.png");
   padding-bottom: 30px;
   background-position: top center;
+
+  &--helmets {
+    background-image: url("../img/bg-advantages--helmets.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &--armor {
+    background-image: url("../img/bg-advantages--armor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-
-// .advatages__title {
-//   font-family: $font;
-//   font-size: 30px;
-//   line-height: 1.2;
-//   font-weight: 400;
-//   letter-spacing: $main-spacing;
-//   text-transform: uppercase;
-//   color: $color1;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .advantages__list {
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// .advantages__item {
-//   font-family: $font;
-//   font-size: 18px;
-//   line-height: 1.2;
-//   font-weight: 400;
-//   letter-spacing: $main-spacing;
-//   color: $color-text;
-// }
-
-// .advantages__text-decoration {
-//   font-weight: 600;
-
-//   &--upercase {
-//     text-transform: uppercase;
-//   }
-// }
-
 
 .advatages__title {
   font-family: $font;
