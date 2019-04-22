@@ -47,7 +47,7 @@
           </div>
           <div class="header__basket">
             <span class="header__basket-sum basket-sum">65 000 р</span>
-            <span class="header__basket-icon">
+            <a class="header__basket-icon" href="basket.html">
               <span class="header__basket-count">6</span>
               <svg class="header__basket-svg" fill="currentColor" width="30" height="33px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -62,8 +62,8 @@
                       S176.291,413.174,188.096,413.174z M94.772,110.186L482,147.846v155.132l-362.229,20.258L94.772,110.186z"/>
                   </g>
                 </g>
-                </svg>
-            </span>
+              </svg>
+            </a>
             <a class="header__basket-link link-decoration" href="#">Весь каталог</a>
           </div>
         </div>
@@ -78,9 +78,9 @@
               <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
               <li class="nav__item"><a class="nav__link" href="body-armor.html">Бронежилеты</a></li>
               <li class="nav__item"><a class="nav__link" href="helmets.html">Бронешлемы</a></li>
-              <li class="nav__item"><a class="nav__link nav__link--active" href="additional.html">Докомплект</a></li>
+              <li class="nav__item"><a class="nav__link" href="additional.html">Докомплект</a></li>
               <li class="nav__item"><a class="nav__link" href="documents.html">Документация</a></li>
-              <li class="nav__item"><a class="nav__link nav__link--promo" href="promo.html">Акция</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--promo nav__link--active">Акция</a></li>
               <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
             <a class="nav__how-order link-decoration" href="how-order.html">Как сделать заказ?</a>
@@ -90,70 +90,35 @@
     </div>
   </header>
   <main>
-    <section class="set">
+    <section class="promo">
       <div class="wrapper">
-        <h1 class="set__title">Докомплект</h1>
-        <ul class="set__list">
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" width="237" height="244" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class">Защита от ударов и осколков</span>
-              <img class="set__item-icon set__item-icon--no" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-        </ul>
-        <div class="set__repairs">
-          <h2 class="set__repairs-title">Ремонт и сервис</h2>
-          <p class="set__repairs-text">После покупки осуществляется гарантийное и далее - сервисное обслуживание продукции на протяжении всего срока службы бронеэлементов, который составляет 12 лет . Оперативно осуществляется ремонт и замена частей изделий, вследствие естественного износа. Принимаются нестандартные индивидуальные заявки.</p>
+        <div class="promo__container">
+          <h2 class="promo__title">Защита должна быть надежной! Защита должна быть доступной!</h2>
+          <p class="promo__text">Как производитель, мы не просто предлагаем профессиональную бронезащиту по отличным ценам, но и предоставляем скидки и подарки для наших клиентов. В зависимости от характера заказа действуют следующие предложения:</p>
+          <h2 class="promo__title">Розница</h2>
+          <ul class="promo__list">
+            <li class="promo__item">
+              <p class="promo__item-text"><span class="promo__item-dec">Для всех клиентов по России</span>
+                  действует бесплатная доставка быстрого реагирования! Каждому нашему клиенту ценный подарок!</p>
+            </li>
+            <li class="promo__item">
+              <p class="promo__item-text"><span class="promo__item-dec">Для розничных покупателей</span> заказ от 1 до 10 шт – сколько изделий, столько и процентов! Заказал 10 штук – получил скидку 10%</p>
+              <span class="promo__item-sale">10%</span>
+            </li>
+            <li class="promo__item">
+              <p class="promo__item-text"><span class="promo__item-dec">Для постоянных покупателей.</span> после 3-го заказа, включается постоянная несгорамаемая скидка - 5% + индивидуальная скидка по вашему заказу!</p>
+              <span class="promo__item-sale">5%</span>
+            </li>
+          </ul>
+          <h2 class="promo__title">Для оптовых покупателей</h2>
+          <ul class="promo__list">
+            <li class="promo__item">
+              <p class="promo__item-text"><span class="promo__item-dec">Для оптовых покупателей</span> при заказе от 10 изделий бронезащиты Ваш заказ рассматривается в индивидуальном порядке. Просто позвоните нам и узнайте именно Вашу цену!</p>
+            </li>
+            <li class="promo__item">
+              <p class="promo__item-text"><span class="promo__item-dec">Для диллеров и представителей</span> Мы приглашаем региональных представителей городов России и стран СНГ, организации снабжения средствами индивидуальной безопасности, специализированые магазины, клубные формирования, для сотрудничества на постоянной и взаимовыгодной основе по специальным условиям!</p>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

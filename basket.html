@@ -78,10 +78,10 @@
               <li class="nav__item"><a class="nav__link" href="about-us.html">О нас</a></li>
               <li class="nav__item"><a class="nav__link" href="body-armor.html">Бронежилеты</a></li>
               <li class="nav__item"><a class="nav__link" href="helmets.html">Бронешлемы</a></li>
-              <li class="nav__item"><a class="nav__link nav__link--active" href="additional.html">Докомплект</a></li>
+              <li class="nav__item"><a class="nav__link" href="additional.html">Докомплект</a></li>
               <li class="nav__item"><a class="nav__link" href="documents.html">Документация</a></li>
               <li class="nav__item"><a class="nav__link nav__link--promo" href="promo.html">Акция</a></li>
-              <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--active">Контакты</a></li>
             </ul>
             <a class="nav__how-order link-decoration" href="how-order.html">Как сделать заказ?</a>
           </div>
@@ -90,89 +90,135 @@
     </div>
   </header>
   <main>
-    <section class="set">
+    <section class="basket">
       <div class="wrapper">
-        <h1 class="set__title">Докомплект</h1>
-        <ul class="set__list">
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" width="237" height="244" alt="">
+        <h2 class="basket__title">Корзина</h2>
+        <form action="post">
+          <div class="basket__table-wrap">
+            <table class="basket__table">
+              <tr class="basket__table-top">
+                <th colspan="2" class="basket__head basket__title-item">Название</th>
+                <th class="basket__head basket__title-color">Цвет</span></th>
+                <th class="basket__head basket__title-size">Размер</span></th>
+                <th class="basket__head  basket__title-cost">Цена</span></th>
+                <th class="basket__head  basket__title-coutn">Количество</span></th>
+                <th colspan="2" class="basket__head  basket__title-sum">Стоимость</span></th>
+              </tr>
+              <tr class="basket__item">
+                <td class="basket__item-pic">
+                  <img width="100" height="72" src="#" alt="">
+                </td>
+                <td>
+                  <div class="basket__item-wrap">
+                    <p class="basket__item-title">Бронежилет Сфера-БР-4</p>
+                    <p class="basket__item-description">
+                      <span>Боковая широкая сталь,</span>
+                      <span>Боковая защита широкая арамид,</span>
+                      <span>Карманы навесные Molle,</span>
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <img class="basket__item-color" src="img/body-armor-color-1.png">
+                </td>
+                <td>
+                  <span class="basket__item-size">Малый</span>
+                </td>
+                <td>
+                  <span class="basket__item-cost">10600р</span>
+                </td>
+                <td class="baskter__item-count">
+                  <span class="basket__input-count basket__input-count--minus"></span>
+                  <input class="basket__item-input" type="text" placeholder="5">
+                  <span class="basket__input-count basket__input-count--plus"></span>
+                </td>
+                <td>
+                  <span class="basket__item-sum">10600р</span>
+                </td>
+                <td>
+                  <button class="basket__item-del"><span class="basket__item-del-dec"></span></button>
+                </td>
+              </tr>
+              <tr class="basket__item">
+                <td class="basket__item-pic">
+                  <img width="100" height="72" src="" alt="">
+                </td>
+                <td>
+                  <div class="basket__item-wrap">
+                    <p class="basket__item-title">Бронежилет Сфера-БР-4</p>
+                    <p class="basket__item-description">
+                      <span>Боковая широкая сталь,</span>
+                      <span>Боковая защита широкая арамид,</span>
+                      <span>Карманы навесные Molle,</span>
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <img class="basket__item-color" src="img/body-armor-color-black.png">
+                </td>
+                <td>
+                  <span class="basket__item-size">Малый</span>
+                </td>
+                <td>
+                  <span class="basket__item-cost">10600р</span>
+                </td>
+                <td class="baskter__item-count">
+                  <span class="basket__input-count basket__input-count--minus"></span>
+                  <input class="basket__item-input" type="text"  placeholder="0">
+                  <span class="basket__input-count basket__input-count--plus"></span>
+                </td>
+                <td>
+                  <span class="basket__item-sum">10600р</span>
+                </td>
+                <td>
+                  <button class="basket__item-del"><span class="basket__item-del-dec"></span></button>
+                </td>
+              </tr>
+              <tr class="basket__item">
+                <td class="basket__item-pic">
+                    <img width="100" height="72" src="" alt="">
+                </td>
+                <td>
+                  <div class="basket__item-wrap">
+                    <p class="basket__item-title">Шлем</p>
+                    <p class="basket__item-description">Забрало</p>
+                  </div>
+                </td>
+                <td>
+                  <img class="basket__item-color" src="img/body-armor-color-blue.png">
+                </td>
+                <td>
+                  <span class="basket__item-size">Стандарт</span>
+                </td>
+                <td>
+                  <span class="basket__item-cost">10600р</span>
+                </td>
+                <td class="baskter__item-count">
+                  <span class="basket__input-count basket__input-count--minus"></span>
+                    <input class="basket__item-input" type="text" placeholder="0">
+                  <span class="basket__input-count basket__input-count--plus"></span>
+                </td>
+                <td>
+                  <span class="basket__item-sum">10600р</span>
+                </td>
+                <td>
+                  <button class="basket__item-del"></button>
+                </td>
+              </tr>
+            </table>
+          </div>
+            <p class="basket__subtitle">Ваш заказ сформирован</p>
+            <div class="basket__wrap">
+              <div class="bakset__text-container">
+                <span class="basket__sum-text">Стоимость заказа:</span>
+                <span class="basket__deliver">Доставка по РФ бесплатно</span>
+              </div>
+              <div class="basket__sum-container">
+                <span class="basket__sum">65 600 руб</span>
+                <input class="basket__submit" type="submit" name="form-submit" id="form-submit" value="Оформить заказ">
+              </div>
             </div>
-            <p class="set__item-description">
-              <span class="set__item-class">Защита от ударов и осколков</span>
-              <img class="set__item-icon set__item-icon--no" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-          <li class="set__item">
-            <h3 class="set__item-title">Альфа - П</h3>
-            <div class="set__img-container">
-              <img src="img/set-img.png" alt="">
-            </div>
-            <p class="set__item-description">
-              <span class="set__item-class"></span>
-              <img class="set__item-icon" src="img/set-icon-def.png"></img>
-            </p>
-            <p class="set__item-about">
-              <a class="set__item-link" href="#">Подробнее</a>
-              <span class="set__item-cost">7500р</span>
-            </p>
-          </li>
-        </ul>
-        <div class="set__repairs">
-          <h2 class="set__repairs-title">Ремонт и сервис</h2>
-          <p class="set__repairs-text">После покупки осуществляется гарантийное и далее - сервисное обслуживание продукции на протяжении всего срока службы бронеэлементов, который составляет 12 лет . Оперативно осуществляется ремонт и замена частей изделий, вследствие естественного износа. Принимаются нестандартные индивидуальные заявки.</p>
-        </div>
-      </div>
-    </section>
-    <section class="request request--faq">
-      <div class="wrapper">
-        <h2 class="request__title">Остались вопросы? Спросите!</h2>
-        <form class="request__form" action="post">
-          <label for="name">
-            <input class="request__input" type="text" id="name" placeholder="Имя">
-          </label>
-          <label for="phone">
-            <input class="request__input" type="text" id="phone" placeholder="Тел" required>
-          </label>
-          <textarea class="request__textarea" name="question" id="question" placeholder="Оставьте вопрос"></textarea>
-          <input class="request__submit" type="submit" value="Отправить">
         </form>
-        <div class="request__btn-continaer">
-          <a class="request__link-catalog">Вернуться к каталогу</a>
-        </div>
       </div>
     </section>
   </main>
