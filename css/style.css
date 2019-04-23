@@ -2092,7 +2092,7 @@ body {
     position: absolute;
     background-color: #28c4bd;
     width: 1px;
-    height: 568px;
+    height: 563px;
     top: -30px;
     left: 0;
     z-index: 20; } }
@@ -2512,6 +2512,8 @@ body {
   background-color: #08e8de;
   padding-left: 25px;
   padding-right: 25px; }
+  .set__item-link:hover {
+    opacity: 0.8; }
 
 .set__item-cost {
   font-family: "Geometria", "Arial", "sans-serif";
@@ -5489,7 +5491,13 @@ td.weapon__osv {
   background-color: #08e8de;
   display: block;
   width: 170px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  .product__link:hover {
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    opacity: 0.8; }
 
 .product__deliver-text {
   font-family: "Geometria", "Arial", "sans-serif";
