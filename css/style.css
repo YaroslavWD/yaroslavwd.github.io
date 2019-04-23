@@ -242,6 +242,16 @@ body {
     margin: 0; } }
 
 @media (min-width: 1230px) {
+  .header {
+    position: relative; }
+    .header::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #3f454b;
+      top: 97px;
+      z-index: 30; }
   .header__logo {
     width: 150px;
     height: 52px;
@@ -281,11 +291,28 @@ body {
   list-style: none;
   padding-bottom: 20px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .nav__item {
   text-align: center;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px; }
   .nav__item::before {
     content: "";
     position: absolute;
@@ -361,7 +388,6 @@ body {
     bottom: 0;
     border-width: 0; }
   .nav__link:hover {
-    opacity: 0.8;
     -webkit-transition: all, 0.3s;
     transition: all, 0.3s; }
     .nav__link:hover::before {
@@ -391,17 +417,19 @@ body {
       background-color: #08e8de;
       bottom: 0;
       left: 0; }
-    .nav__link--active:hover::before {
-      content: none; }
-    .nav__link--active:hover::after {
-      content: "";
-      position: absolute;
-      border: none;
-      width: 100%;
-      height: 1px;
-      background-color: #08e8de;
-      bottom: 0;
-      left: 0; }
+    .nav__link--active:hover {
+      opacity: 1; }
+      .nav__link--active:hover::before {
+        content: none; }
+      .nav__link--active:hover::after {
+        content: "";
+        position: absolute;
+        border: none;
+        width: 100%;
+        height: 1px;
+        background-color: #08e8de;
+        bottom: 0;
+        left: 0; }
 
 .nav__how-order {
   font-family: "Geometria", "Arial", "sans-serif";
@@ -421,6 +449,10 @@ body {
     opacity: 0.8;
     -webkit-box-shadow: none;
             box-shadow: none; }
+  .nav__how-order--active:hover {
+    opacity: 1;
+    -webkit-box-shadow: inset 0 -1px 0 0 #08e8de;
+            box-shadow: inset 0 -1px 0 0 #08e8de; }
 
 .nav__container {
   display: -webkit-box;
@@ -446,6 +478,10 @@ body {
   width: 49%;
   text-align: left;
   padding-left: 20px; }
+  .nav__item--footer::before {
+    content: none; }
+  .nav__item--footer::after {
+    content: none; }
 
 @media (min-width: 768px) {
   .nav {
@@ -457,6 +493,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -475,6 +515,8 @@ body {
     padding-left: 0; } }
 
 @media (min-width: 1230px) {
+  .nav {
+    border-top: none; }
   .footer__container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -782,6 +824,29 @@ body {
       background-image: url("../img/decoration-line.png");
       background-repeat: repeat-x;
       top: 137px;
+      right: 0; }
+  .advantages__line {
+    position: absolute;
+    background-color: #168681; }
+    .advantages__line--1 {
+      height: 81px;
+      width: 1px;
+      top: -65px;
+      left: 0; }
+    .advantages__line--2 {
+      width: 45px;
+      height: 1px;
+      left: 0;
+      top: 16px; }
+    .advantages__line--3 {
+      width: 45px;
+      height: 1px;
+      top: 16px;
+      right: 0; }
+    .advantages__line--4 {
+      height: 508px;
+      width: 1px;
+      top: 16px;
       right: 0; } }
 
 .products {
@@ -959,7 +1024,40 @@ body {
   .products__item-img--complect {
     left: -30px;
     width: 300px;
-    bottom: -2px; } }
+    bottom: -2px; }
+  .products__line {
+    position: absolute;
+    background-color: #08e8de; }
+    .products__line--1 {
+      right: 0;
+      top: -87px;
+      width: 1px;
+      height: 380px; }
+    .products__line--2 {
+      right: 0;
+      top: 293px;
+      height: 1px;
+      width: 40px; }
+    .products__line--3 {
+      width: 90px;
+      height: 1px;
+      right: 367px;
+      top: 293px; }
+    .products__line--4 {
+      width: 90px;
+      height: 1px;
+      left: 367px;
+      top: 293px; }
+    .products__line--5 {
+      left: 0;
+      top: 293px;
+      height: 1px;
+      width: 40px; }
+    .products__line--6 {
+      left: 0;
+      bottom: -105px;
+      width: 1px;
+      height: 403px; } }
 
 .description {
   background-image: url("../img/bg-description-1.png");
@@ -1055,7 +1153,7 @@ body {
   width: 245px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
   .description__img-container img {
     width: 100%;
     height: auto; }
@@ -1285,6 +1383,10 @@ body {
   .description__list--helmets {
     padding: 0;
     margin: 0; }
+    .description__list--helmets .description__item-text:nth-child(1) {
+      left: 130px; }
+    .description__list--helmets .description__item-text:nth-child(4) {
+      left: 0; }
   .description__block--helmets {
     padding-top: 464px;
     margin-right: auto;
@@ -1442,7 +1544,37 @@ body {
   .additional__btn {
     position: absolute;
     bottom: 70px;
-    left: 200px; } }
+    left: 200px; }
+  .additional__line {
+    background-color: #08e8de;
+    position: absolute; }
+    .additional__line--1 {
+      height: 796px;
+      width: 1px;
+      left: 0;
+      top: -99px; }
+    .additional__line--2 {
+      bottom: 96px;
+      z-index: 20;
+      width: 180px;
+      height: 1px;
+      left: 0; }
+    .additional__line--3 {
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid #08e8de;
+      border-bottom: 1px solid #08e8de;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      background-color: transparent;
+      bottom: 92px;
+      left: 169px;
+      z-index: 20; }
+    .additional__line--4 {
+      left: 0;
+      width: 100%;
+      height: 1px;
+      bottom: -100px; } }
 
 .clients__container {
   padding-top: 30px;
@@ -1652,6 +1784,8 @@ body {
         height: 67px; } }
 
 @media (min-width: 1230px) {
+  .clients__description {
+    overflow: hidden; }
   .clients__count {
     font-size: 24px;
     width: 649px;
@@ -1662,7 +1796,54 @@ body {
   .clients__description-item {
     width: 900px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .clients__description-title {
+    position: relative; }
+    .clients__description-title::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      background-color: #08e8de;
+      right: 105%;
+      top: 20px; }
+    .clients__description-title::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      background-color: #08e8de;
+      left: 105%;
+      top: 20px; }
+  .clients__line {
+    background-color: #08e8de;
+    position: absolute; }
+    .clients__line--1 {
+      width: 1px;
+      height: 505px;
+      top: -105px;
+      right: 0; }
+    .clients__line--2 {
+      width: 20px;
+      height: 1px;
+      top: 400px;
+      right: 0; }
+    .clients__line--3 {
+      width: 20px;
+      height: 1px;
+      top: 400px;
+      left: 0; }
+    .clients__line--4 {
+      width: 1px;
+      height: 185px;
+      bottom: -430px;
+      left: 0; }
+    .clients__line--5 {
+      width: 1px;
+      height: 1175px;
+      left: 0;
+      top: -202px;
+      z-index: 20; } }
 
 .request {
   padding-top: 30px;
@@ -1857,7 +2038,23 @@ body {
   .request__title::before {
     left: 219px; }
   .request__title::after {
-    right: 219px; } }
+    right: 219px; }
+  .request__line--1 {
+    position: absolute;
+    background-color: #28c4bd;
+    width: 247px;
+    height: 1px;
+    bottom: 24px;
+    left: 0;
+    z-index: 20; }
+  .request__line--2 {
+    position: absolute;
+    background-color: #28c4bd;
+    width: 1px;
+    height: 568px;
+    top: -30px;
+    left: 0;
+    z-index: 20; } }
 
 .btn__container {
   display: -webkit-box;
@@ -1931,6 +2128,9 @@ body {
   width: 125px;
   height: 52px; }
 
+.footer__logo-link:hover {
+  opacity: 0.8; }
+
 .footer__order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1954,6 +2154,8 @@ body {
   letter-spacing: 0.48px;
   text-decoration: underline;
   color: #ffffff; }
+  .footer__callback-phone:hover {
+    opacity: 0.8; }
 
 .footer__basket-sum {
   font-family: "Geometria", "Arial", "sans-serif";
@@ -1975,6 +2177,9 @@ body {
   width: 20px;
   height: 18px;
   color: #4b565a; }
+
+.footer__basket-icon:hover .footer__basket-svg {
+  color: #ffffff; }
 
 @media (min-width: 768px) {
   .footer__container {
@@ -2743,6 +2948,8 @@ body {
   margin-right: auto;
   color: #000000;
   margin-bottom: 20px; }
+  .about__call-link:hover {
+    opacity: 0.8; }
 
 .about__call-text {
   display: block;
@@ -3090,6 +3297,8 @@ body {
   background-color: #08e8de;
   padding-left: 25px;
   padding-right: 25px; }
+  .catalog__item-link:hover {
+    opacity: 0.8; }
 
 .catalog__item-cost {
   font-family: "Geometria", "Arial", "sans-serif";
@@ -3145,6 +3354,8 @@ body {
   color: #2d2d2d;
   margin-left: 30px;
   margin-right: 30px; }
+  .catalog__spec-link:hover {
+    opacity: 0.8; }
 
 .catalog-page--body-armor .catalog__img-container {
   width: 134px;
@@ -4291,6 +4502,99 @@ td.weapon__hunter {
   background-position: center 10px;
   padding-top: 50px;
   padding-bottom: 0; }
+
+td.weapon__balistic {
+  background-image: url("../img/documents-icon-balistic-3.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-bottom: 0; }
+
+td.weapon__macarov {
+  background-image: url("../img/documents-icon-makarov-4.png");
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-position-x: 15px;
+  padding-bottom: 0;
+  padding-left: 25px; }
+
+td.weapon__nagan {
+  background-image: url("../img/documents-icon-nagan-5.png");
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-position-x: 15px;
+  padding-bottom: 0;
+  padding-left: 48px; }
+
+td.weapon__stechkin {
+  background-image: url("../img/documents-icon-stechkin-6.png");
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 43px; }
+
+td.weapon__psm {
+  background-image: url("../img/documents-icon-psm-7.png");
+  background-repeat: no-repeat;
+  background-position: center 15px;
+  background-position-x: 10px;
+  padding-bottom: 0; }
+
+td.weapon__tokarev {
+  background-image: url("../img/documents-icon-tokarev-8.png");
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 30px; }
+
+td.weapon__serducov {
+  background-image: url("../img/documents-icon-serducov-9.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 30px; }
+
+td.weapon__ak-74 {
+  background-image: url("../img/documents-icon-ak-74-10.png");
+  background-repeat: no-repeat;
+  background-position: center -35px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 30px; }
+
+td.weapon__akm {
+  background-image: url("../img/documents-icon-akm-11.png");
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 30px; }
+
+td.weapon__yarigin {
+  background-image: url("../img/documents-icon-yarigin-12.png");
+  background-repeat: no-repeat;
+  background-position: center -10px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 45px; }
+
+td.weapon__svd {
+  background-image: url("../img/documents-icon-svd-13.png");
+  background-repeat: no-repeat;
+  background-position: center -15px;
+  background-position-x: -30px;
+  padding-bottom: 0;
+  padding-left: 45px; }
+
+td.weapon__osv {
+  background-image: url("../img/documents-icon-osv-14.png");
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-position-x: 5px;
+  padding-bottom: 0;
+  padding-left: 45px; }
 
 .recomendation {
   padding-top: 30px;

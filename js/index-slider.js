@@ -1,6 +1,7 @@
 var swiper = new Swiper('.slider--test', {
-      speed: 600,
-      parallax: true,
+  speed: 600,
+  parallax: true,
+  loop: true,
   pagination: {
     el: '.swiper-pagination-index',
     clickable: true,
