@@ -763,16 +763,15 @@ body {
     fill: white; }
 
 .advantages__main-logo--card {
-  width: 300px;
   margin-left: auto;
   margin-right: auto; }
   .advantages__main-logo--card img {
-    width: 100%; }
+    width: 300px; }
 
 @media (min-width: 768px) {
   .advantages {
     padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 200px; }
   .advatages__title {
     font-size: 20px;
     padding-bottom: 44px;
@@ -786,12 +785,43 @@ body {
       left: 0;
       width: 8px;
       height: 8px;
-      top: 4px; } }
+      top: 4px; }
+  .advantages__main-logo--card {
+    position: relative; }
+    .advantages__main-logo--card::before {
+      content: "";
+      position: absolute;
+      width: 37%;
+      height: 1px;
+      background-image: url("../img/decoration-line.png");
+      background-repeat: repeat-x;
+      top: 87px;
+      left: 0; }
+    .advantages__main-logo--card::after {
+      content: "";
+      position: absolute;
+      width: 37%;
+      height: 1px;
+      background-image: url("../img/decoration-line.png");
+      background-repeat: repeat-x;
+      top: 87px;
+      right: 0; }
+    .advantages__main-logo--card img {
+      width: 410px;
+      position: absolute;
+      left: 0;
+      top: -50px; }
+  .advantages__main-logo--wrap {
+    width: 410px;
+    height: 1px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (min-width: 1230px) {
   .advantages {
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 200px;
     background-size: cover; }
   .advatages__title {
     font-size: 30px;
@@ -814,7 +844,7 @@ body {
       height: 1px;
       background-image: url("../img/decoration-line.png");
       background-repeat: repeat-x;
-      top: 137px;
+      top: 87px;
       left: 0; }
     .advantages__main-logo--card::after {
       content: "";
@@ -823,8 +853,19 @@ body {
       height: 1px;
       background-image: url("../img/decoration-line.png");
       background-repeat: repeat-x;
-      top: 137px;
+      top: 87px;
       right: 0; }
+    .advantages__main-logo--card img {
+      width: 410px;
+      position: absolute;
+      left: 0;
+      top: -50px; }
+  .advantages__main-logo--wrap {
+    width: 410px;
+    height: 1px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
   .advantages__line {
     position: absolute;
     background-color: #168681; }
@@ -844,7 +885,7 @@ body {
       top: 16px;
       right: 0; }
     .advantages__line--4 {
-      height: 508px;
+      height: 546px;
       width: 1px;
       top: 16px;
       right: 0; } }

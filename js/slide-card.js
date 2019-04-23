@@ -1,17 +1,18 @@
 var galleryThumbs = new Swiper('.gallery-thumbs', {
+  speed: 600,
+  parallax: true,
+  loop: true,
   spaceBetween: 10,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
-
-  navigation: {
-    nextEl: '.slide-button-next',
-    prevEl: '.slide-button-prev',
-  }
 });
 
 var galleryTop = new Swiper('.gallery-top', {
+  speed: 600,
+  parallax: true,
+  loop: true,
   spaceBetween: 10,
   thumbs: {
     swiper: galleryThumbs
