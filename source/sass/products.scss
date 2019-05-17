@@ -1,0 +1,18 @@
+.products {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.products__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: $big-mobile) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

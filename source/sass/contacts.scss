@@ -1,0 +1,35 @@
+.contacts {
+  background-color: $color-1;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.contacts__logo-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 194px;
+  padding-bottom: 18px;
+}
+
+.contacts {
+  .phone__text {
+    color: $color-2;
+  }
+
+  .phone__link {
+    color: $color-2;
+  }
+
+  .phone {
+    &::before {
+      border-color: $color-2;
+    }
+
+    &::after {
+      background-image: url("../img/icon-phone--dark.svg");
+    }
+  }
+}

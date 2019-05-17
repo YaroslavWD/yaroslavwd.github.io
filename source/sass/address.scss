@@ -1,0 +1,147 @@
+.address {
+  background-color: $color-1;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.address__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 40px;
+}
+
+.address__item-title {
+  padding: 0;
+  margin: 0;
+  font-family: $decfont;
+  font-size: 28px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #2b2a28;
+  padding-bottom: 2px;
+}
+
+.address__item-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid $color-2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-location.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    left: 13px;
+    top: 12px;
+  }
+}
+
+.address__item {
+  width: 191px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.address__item-town {
+  padding: 0;
+  margin: 0;
+  font-family: $secondfont;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: $color-2;
+}
+
+.address__item-street {
+  padding: 0;
+  margin: 0;
+  font-family: $decfont;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 600;
+  color: $color-2;
+}
+
+.address__item-time {
+  padding: 0;
+  margin: 0;
+  font-family: $secondfont;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  color: $color-2;
+  text-transform: lowercase;
+}
+
+@media (min-width: $big-mobile) {
+  .address__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .address__logo-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .address__list {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .address__list {
+    justify-content: flex-end;
+  }
+
+  .address__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .address {
+    padding-left: 19px;
+    padding-right: 17px;
+    width: 227px;
+  }
+
+  .address__logo-container {
+    margin-bottom: 60px;
+  }
+
+  .address__list {
+    flex-direction: column;
+  }
+
+  .address__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
