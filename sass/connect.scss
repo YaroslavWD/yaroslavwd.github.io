@@ -85,3 +85,9 @@
   color: $font-color-1;
   text-decoration: underline;
 }
+
+@media (min-width: $desktop) {
+  .conntect--noindex {
+    width: 40%;
+  }
+}

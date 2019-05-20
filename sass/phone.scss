@@ -52,3 +52,10 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $desktop) {
+  .page__bottom {
+    .phone {
+      margin-right: 0;
+    }
+  }
+}

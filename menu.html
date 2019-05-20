@@ -22,7 +22,7 @@
   <div class="page">
     <div class="page__top">
       <header class="header header--pizza">
-        <div class="wrapper wrapper--nowrap">
+        <div class="wrapper">
           <div class="header__wrapper">
             <div class="header__logo-container">
               <img class="header__logo" src="img/logo--white.png" alt="от ШЕФА - не просто еда">
@@ -68,8 +68,8 @@
           </ul>
         </div>
         <section class="products">
-          <ul class="products__list">
-            <li class="products__item product">
+          <div class="products__list">
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -79,8 +79,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-2.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -90,8 +90,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-3.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -101,8 +101,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -112,8 +112,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -123,8 +123,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -134,8 +134,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -145,8 +145,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -156,8 +156,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-            <li class="products__item product">
+            </div>
+            <div class="products__item product">
               <div class="product__img-container"><img src="img/photo-product-1.jpg" width="300" height="300" alt="Название пиццы"></div>
               <div class="product__wrap">
                 <h2 class="product__name">Сет "Золотой дракон"</h2>
@@ -167,8 +167,8 @@
                   <a class="product__link-basket" href="#"></a>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div class="products__basket order">
             <h3 class="order__title">Корзина</h3>
             <div class="order__table">
@@ -238,24 +238,26 @@
     </div>
     <div class="page__bottom">
       <footer class="footer footer--text">
-        <div class="wrapper wrapper--nowrap">
+        <div class="wrapper">
           <div class="footer__wrap">
             <section class="contacts">
               <div class="contacts__logo-container">
                 <img class="contacts__logo" alt="От Шефа - не просто еда" src="img/logo--dark.png">
               </div>
-              <div class="phone">
-                <span class="phone__text">Наш телефон</span>
-                <a class="phone__link" href="tel:+89003907690">8(900) 390-76-90</a>
-                <span class="phone__text">Звоните с 9:00 до 18:00</span>
-              </div>
-              <div class="point">
-                <h3 class="point__town">г.Югорск</h3>
-                <span class="point__street">Ул. Ленина 14</span>
-                <span class="point__time">Ждем вас с 10:00 до 23:00</span>
+              <div class="contacts__container">
+                <div class="phone">
+                  <span class="phone__text">Наш телефон</span>
+                  <a class="phone__link" href="tel:+89003907690">8(900) 390-76-90</a>
+                  <span class="phone__text">Звоните с 9:00 до 18:00</span>
+                </div>
+                <div class="point">
+                  <h3 class="point__town">г.Югорск</h3>
+                  <span class="point__street">Ул. Ленина 14</span>
+                  <span class="point__time">Ждем вас с 10:00 до 23:00</span>
+                </div>
               </div>
             </section>
-            <section class="info">
+            <section class="info info--noindex">
               <h2 class="info__title">Информация</h2>
               <ul class="info__nav-list">
                 <li class="info__nav-item"><a class="info__nav-link" href="about-us.html">О нас</a></li>
@@ -266,7 +268,7 @@
                 <li class="info__nav-item"><a class="info__nav-link" href="pay.html">Оплата</a></li>
               </ul>
             </section>
-            <section class="conntect">
+            <section class="conntect conntect--noindex">
               <h2 class="connect__title">Присоединяйтесь к нам!</h2>
               <p class="contect__subtitle">Подпишитесь - получите скидку 10% на первый заказ и наши специальные предложения!</p>
               <form class="connect__form" action="post">

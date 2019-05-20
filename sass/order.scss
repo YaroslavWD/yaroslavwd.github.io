@@ -167,3 +167,25 @@
     right: 53px;
   }
 }
+
+
+@media (min-width: $big-mobile) {
+  .order {
+    width: 100%;
+  }
+
+  .order__name-cell {
+    width: 60%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order {
+    width: 301px;
+    padding-left: 10px;
+  }
+
+  .order__title {
+    padding-left: 10px;
+  }
+}

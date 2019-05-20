@@ -70,3 +70,16 @@
     }
   }
 }
+
+@media (min-width: $big-mobile) {
+  .product {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet) {
+  .product {
+    width: 32%;
+  }
+}

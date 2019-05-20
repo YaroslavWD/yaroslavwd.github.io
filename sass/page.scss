@@ -47,3 +47,19 @@
     padding-top: 70px;
   }
 }
+
+@media (min-width: $tablet) {
+  .page__title {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page__top {
+    height: 280px;
+  }
+
+  .page__title {
+    padding-top: 100px;
+  }
+}

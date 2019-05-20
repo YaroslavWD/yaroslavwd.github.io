@@ -176,7 +176,12 @@ body {
   .header {
     padding-left: 8%;
     padding-right: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .header--pizza {
+      padding-left: 0; }
+      .header--pizza .header__nav {
+        margin-left: auto;
+        margin-right: auto; } }
 
 .main {
   padding-top: 60px;
@@ -232,6 +237,17 @@ body {
     opacity: 0.7;
     z-index: -1; }
 
+@media (min-width: 420px) {
+  .page__bottom .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
 @media (min-width: 767px) {
   .footer {
     margin-top: auto; }
@@ -242,7 +258,9 @@ body {
 
 @media (min-width: 1024px) {
   .footer {
-    padding-left: 44px; } }
+    padding-left: 44px; }
+  .page__bottom .footer {
+    padding-left: 0; } }
 
 .address {
   background-color: #feed00;
@@ -460,6 +478,10 @@ body {
   text-decoration: none;
   text-transform: uppercase; }
 
+@media (min-width: 1024px) {
+  .page__bottom .phone {
+    margin-right: 0; } }
+
 .basket {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,6 +603,10 @@ body {
   .info__nav-item {
     width: 50%; } }
 
+@media (min-width: 1024px) {
+  .info--noindex {
+    width: 25%; } }
+
 .conntect {
   max-width: 515px; }
 
@@ -676,6 +702,10 @@ body {
   color: #ffffff;
   text-decoration: underline; }
 
+@media (min-width: 1024px) {
+  .conntect--noindex {
+    width: 40%; } }
+
 .main-content {
   background-image: url("../img/main-bg.jpg");
   background-position: top center;
@@ -760,6 +790,16 @@ body {
   .page__title {
     padding-top: 70px; } }
 
+@media (min-width: 767px) {
+  .page__title {
+    padding-top: 50px; } }
+
+@media (min-width: 1024px) {
+  .page__top {
+    height: 280px; }
+  .page__title {
+    padding-top: 100px; } }
+
 .sort-nav {
   padding-top: 40px;
   display: -webkit-box;
@@ -831,7 +871,21 @@ body {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between;
+    padding-bottom: 40px; } }
+
+@media (min-width: 1024px) {
+  .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .products__list {
+    width: 74%; }
+  .products__basket {
+    width: 25%; } }
 
 .product {
   background-color: #f2c94c;
@@ -896,6 +950,15 @@ body {
     .product__img-container img {
       width: 100%;
       height: auto; } }
+
+@media (min-width: 420px) {
+  .product {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media (min-width: 767px) {
+  .product {
+    width: 32%; } }
 
 .order {
   width: 301px; }
@@ -1063,6 +1126,19 @@ body {
     top: 8px;
     right: 53px; }
 
+@media (min-width: 420px) {
+  .order {
+    width: 100%; }
+  .order__name-cell {
+    width: 60%; } }
+
+@media (min-width: 1024px) {
+  .order {
+    width: 301px;
+    padding-left: 10px; }
+  .order__title {
+    padding-left: 10px; } }
+
 .contacts {
   background-color: #feed00;
   padding-top: 16px;
@@ -1088,6 +1164,42 @@ body {
 
 .contacts .phone::after {
   background-image: url("../img/icon-phone--dark.svg"); }
+
+@media (min-width: 420px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .point {
+    width: 230px; } }
+
+@media (min-width: 720px) {
+  .contacts__container {
+    padding-top: 25px; }
+  .point {
+    width: 210px; } }
+
+@media (min-width: 1024px) {
+  .contacts {
+    width: 240px;
+    margin: 0;
+    margin-top: -50px; } }
 
 .point {
   padding-left: 60px;

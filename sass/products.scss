@@ -14,5 +14,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop) {
+  .products {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products__list {
+    width: 74%;
+  }
+
+  .products__basket {
+    width: 25%;
+  }
+}
+

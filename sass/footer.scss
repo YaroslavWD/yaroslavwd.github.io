@@ -20,6 +20,16 @@
   }
 }
 
+@media (min-width: $big-mobile) {
+  .page__bottom {
+    .footer__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .footer {
     margin-top: auto;
@@ -33,5 +43,11 @@
 @media (min-width: $desktop) {
   .footer {
     padding-left: 44px;
+  }
+
+  .page__bottom {
+    .footer {
+      padding-left: 0;
+    }
   }
 }
