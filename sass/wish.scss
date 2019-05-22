@@ -1,0 +1,26 @@
+@media (min-width: $big-desktop) {
+  .wish__wrap {
+    display: flex;
+  }
+
+  .wish__container {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+
+
+    .block__item {
+      padding: 0;
+      margin: 0;
+      background-color: $color-2;
+
+      &--big {
+        height: 100%;
+
+        .block__img-container img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

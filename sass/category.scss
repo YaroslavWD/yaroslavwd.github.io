@@ -1,0 +1,17 @@
+@media (min-width: $big-mobile) {
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .category__item {
+    width: 48%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .category__item {
+    width: 24%;
+  }
+}

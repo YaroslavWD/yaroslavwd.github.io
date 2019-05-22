@@ -1,6 +1,6 @@
+@import "var.scss";
 @import "font.scss";
 @import "global.scss";
-@import "var.scss";
 @import "wrapper.scss";
 
 @import "header.scss";
@@ -26,3 +26,11 @@
 @import "contacts.scss";
 @import "point.scss";
 @import "tags.scss";
+
+
+// restaurant
+@import "block.scss";
+@import "gallery.scss";
+@import "cook.scss";
+@import "wish.scss";
+@import "category.scss";

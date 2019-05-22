@@ -1,0 +1,24 @@
+@media (min-width: $tablet) {
+
+  .cook__img-container {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--1 {
+      background-image: url("../img/cook-1.jpg");
+    }
+
+    &--2 {
+      background-image: url("../img/cook-2.jpg");
+    }
+  }
+
+  .cook {
+    .block__text-subtitle {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
